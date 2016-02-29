@@ -1,0 +1,28 @@
+.listproduct .search {
+	margin: 10px;
+}
+
+.listproduct .items table {
+	width: 100%;
+	border-spacing: 0px;
+}
+
+.listproduct .items table td, .listproduct .items table th {
+	border-right: 1px solid black;
+}
+
+.listproduct .items table thead {
+	background-color: #909090;
+}
+
+.listproduct .items table tbody tr:nth-child(odd) {
+	background-color: #dddddd;
+}
+
+.listproduct .items table tbody {
+	background-color: #efefef;
+}
+
+.listproduct .items table tbody tr:hover {
+	background-color: #c0c0c0;
+}

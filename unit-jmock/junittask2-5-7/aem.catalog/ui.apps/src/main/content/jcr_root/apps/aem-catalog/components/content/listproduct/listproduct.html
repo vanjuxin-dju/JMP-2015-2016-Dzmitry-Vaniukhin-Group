@@ -1,0 +1,23 @@
+<div class="listproduct" data-sly-use.clientLib="${'/libs/granite/sightly/templates/clientlib.html'}">
+	<div class="search" align="left" data-sly-attribute.align="${properties.align}">
+		<form action="${properties.path}.searchproduct.json" class="submitform200">
+			<label>${properties.searchlabel ? properties.searchlabel : "Search"}: <input type="text" name="query"></label>
+			<button type="submit">Go!</button>
+		</form>
+	</div>
+	<div class="items">
+		<table>
+			<thead>
+				<tr>
+					<th data-sly-test="${properties.name}">Name</th>
+					<th data-sly-test="${properties.description}">Description</th>
+					<th data-sly-test="${properties.count}">Count</th>
+					<th data-sly-test="${properties.tags}">Tag</th>
+				</tr>
+			</thead>
+			<tbody>
+			</tbody>
+		</table>
+	</div>
+	<meta data-sly-call="${ clientLib.all @ categories='listproduct' }" data-sly-unwrap></meta>
+</div>

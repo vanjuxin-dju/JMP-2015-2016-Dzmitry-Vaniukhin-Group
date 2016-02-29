@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Dialog"
+    title="Edit"
+    xtype="dialog">
+    <items
+        jcr:primaryType="cq:Widget"
+        xtype="tabpanel">
+        <items jcr:primaryType="cq:WidgetCollection">
+            <tab1
+                jcr:primaryType="cq:Panel"
+                title="Search">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <query
+                        jcr:primaryType="cq:Widget"
+                        allowBlank="true"
+                        fieldDescription="Default label to search field"
+                        fieldLabel="Text search"
+                        validateOnBlur="true"
+                        xtype="textfield"
+                        name="./searchlabel"
+                        defaultValue="Search"/>
+                    <align
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Align:"
+                        name="./align"
+                        type="select"
+                        xtype="selection">
+                        <options jcr:primaryType="cq:WidgetCollection">
+                            <o1
+                                jcr:primaryType="nt:unstructured"
+                                text="Left"
+                                value="left"/>
+                            <o2
+                                jcr:primaryType="nt:unstructured"
+                                text="Center"
+                                value="center"/>
+                            <o3
+                                jcr:primaryType="nt:unstructured"
+                                text="Right"
+                                value="right"/>
+                        </options>
+                    </align>
+                </items>
+            </tab1>
+            <tab2
+                jcr:primaryType="cq:Panel"
+                border="false"
+                height=""
+                title="Table"
+                width=""
+                xtype="panel">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <name
+                        jcr:primaryType="cq:Widget"
+                        name="./name"
+                        type="checkbox"
+                        xtype="selection"
+                        defaultValue="{Boolean}false"
+                        fieldLabel="Name"/>
+                    <description
+                        jcr:primaryType="cq:Widget"
+                        name="./description"
+                        type="checkbox"
+                        xtype="selection"
+                        defaultValue="{Boolean}false"
+                        fieldLabel="Description"/>
+                    <count
+                        jcr:primaryType="cq:Widget"
+                        name="./count"
+                        type="checkbox"
+                        xtype="selection"
+                        defaultValue="{Boolean}false"
+                        fieldLabel="Count"/>
+                    <tags
+                        jcr:primaryType="cq:Widget"
+                        name="./tags"
+                        type="checkbox"
+                        xtype="selection"
+                        defaultValue="{Boolean}false"
+                        fieldLabel="Tags"/>
+                    <sortOrder
+                        jcr:primaryType="cq:Widget"
+                        name="./sortOrder"
+                        type="checkbox"
+                        xtype="selection"
+                        defaultValue="{Boolean}false"
+                        fieldLabel="Sort order"/>
+                </items>
+            </tab2>
+        </items>
+    </items>
+</jcr:root>

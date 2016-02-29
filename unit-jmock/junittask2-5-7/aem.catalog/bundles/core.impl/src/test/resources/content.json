@@ -1,0 +1,98 @@
+{
+        "jcr:primaryType"   : "sling:OrderedFolder",
+        "jcr:createdBy"     : "admin",
+        "jcr:created"       : "2015-03-06T08:09:30.992-03:00",
+        "sling:resourceType": "sling:redirect",
+        "sling:target"      : "sling:target",
+        "jcr:mixinTypes"    : ["mix:lockable", "rep:AccessControllable", "sling:Redirect"],
+        "aem-catalog"       : {
+            "jcr:primaryType"   : "cq:Page",
+            "jcr:createdBy"     : "admin",
+            "jcr:created"       : "2015-03-20T04:20:33.052-03:00",
+            "en"                : {
+                "jcr:primaryType"   : "cq:Page",
+                "jcr:createdBy"     : "admin",
+                "jcr:created"       : "2015-03-20T04:20:33.052-03:00",
+                "jcr:content"       : {
+                    "jcr:primaryType"   : "nt:unstructed",
+                    "jcr:title"         : "English",
+                    "sling:resourceType": "aem-catalog/components/page/page-home",
+                    "par"               : {
+                        "jcr:primaryType"   :"nt:unstructed",
+                        "sling:resourceType":"foundation/components/parsys",
+                        "listproduct"       : {
+                            "jcr:primaryType" : "nt:unstructed",
+                            "align" : "right",
+                            "count" : "true",
+                            "description" : "true",
+                            "name" : "true",
+                            "searchlabel" : "Search",
+                            "sortOrder" : "true",
+                            "sling:resourceType" : "aem-catalog/components/content/listproduct"
+                        },
+                        "listproduct_2"     : {
+                            "jcr:primaryType" : "nt:unstructed",
+                            "align" : "center",
+                            "count" : "false",
+                            "description" : "true",
+                            "name" : "true",
+                            "searchlabel" : "Search",
+                            "sling:resourceType" : "aem-catalog/components/content/listproduct"
+                        }
+                    }
+                }
+            }
+        },
+        "dam":
+        {
+        	"jcr:primaryType" : "nt:folder",
+            "aem-catalog":
+            {
+                "jcr:primaryType": "sling:OrderedFolder",
+                "jcr:content"    :
+                {
+                    "jcr:primaryType" : "nt:unstructured",
+                    "jcr:title"       : "aem-catalog"
+                },
+                "media"           :
+                {
+                    "jcr:primaryType" : "nt:folder",
+                    "images"          :
+                    {
+                        "jcr:primaryType" : "nt:folder"
+                    }
+                },
+                "product"         :
+                {
+                    "jcr:primaryType" : "nt:folder",
+                    "logitech"        :
+                    {
+                        "jcr:primaryType" : "sling:Folder",
+                        "logitech-x5"     : 
+                        {
+                            "jcr:description" : "Logitech full black mouse",
+                            "jcr:primaryType" : "nt:unstructured",
+                            "jcr:title"       : "Logitech",
+                            "count"           : "12",
+                            "imagePath"       : "/content/jcr_root/content/dam/aem-catalog/media/images/mouse-b.jpg",
+                            "tags"            : ["Device/Mouse", "Color/Black"]
+                        }                        
+                    },
+                    "pewlett-packard"     :
+                    {
+                        "jcr:primaryType" : "sling:Folder",
+                        "hewlett-packard" :
+                        {
+                              "jcr:description" : "Hewlett-Packard one simple mouse for every day",
+                              "jcr:primaryType" : "nt:unstructured",
+                              "jcr:title"       : "Hewlett-Packard",
+                              "count"           : "100",
+                              "imagePath"       : "/content/jcr_root/content/dam/aem-catalog/media/images/mouse-w.jpg",
+                              "tags"            : ["Device/Mouse", "Color/Cyan"]
+                        }
+                    }
+                }
+            }
+        }
+}
+

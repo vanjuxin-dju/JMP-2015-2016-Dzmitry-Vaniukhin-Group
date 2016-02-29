@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workspaceFilter version="1.0">
+	<filter root="/apps/aem-catalog" mode="update" />
+	<filter root="/apps/sling" />
+	<filter root="/etc/designs/aem-catalog" />
+	<filter root="/etc/tags/catalog" mode="merge" />
+</workspaceFilter>

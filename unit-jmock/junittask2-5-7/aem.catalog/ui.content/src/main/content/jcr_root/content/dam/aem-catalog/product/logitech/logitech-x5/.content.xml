@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:description="Logitech full black mouse"
+    jcr:primaryType="nt:unstructured"
+    jcr:title="Logitech"
+    count="{Long}12"
+    imagePath="/content/jcr_root/content/dam/aem-catalog/media/images/mouse-b.jpg"
+    tags="[Device/Mouse, Color/Black]"/>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
+	xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+	xmlns:nt="http://www.jcp.org/jcr/nt/1.0" jcr:description="Generic template for aem-catalog Pages"
+	jcr:primaryType="cq:Template" jcr:title="aem-catalog Page"
+	allowedPaths="[/content/aem-catalog(/.*)?]" ranking="{Long}90">
+	<jcr:content 
+		cq:allowedTemplates="[/apps/aem-catalog/templates/page]"
+		cq:designPath="/etc/designs/aem-catalog" cq:template="/apps/aem-catalog/templates/homepage"
+		jcr:primaryType="cq:PageContent" sling:resourceType="aem-catalog/components/page/page">
+		<par jcr:primaryType="nt:unstructured" sling:resourceType="foundation/components/parsys" />
+	</jcr:content>
+</jcr:root>

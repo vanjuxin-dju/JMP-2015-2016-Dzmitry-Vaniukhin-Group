@@ -1,0 +1,4 @@
+#base=source
+
+jquery.js
+mycustom.js
