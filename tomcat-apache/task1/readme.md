@@ -6,6 +6,7 @@
 4. Add to **httpd.conf** the following:
 
     LoadModule jk_module modules/mod_jk.so
+    
     Include conf/extra/mod_jk.conf
 
 5. Build the app and deploy it to Tomcat
