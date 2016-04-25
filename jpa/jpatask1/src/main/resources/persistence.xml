@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence>
+   <persistence-unit name="jpatask1" transaction-type="RESOURCE_LOCAL">
+      <class>com.epam.example.jpatask1.domain.Employee</class>
+      <class>com.epam.example.jpatask1.domain.Project</class>
+      <class>com.epam.example.jpatask1.domain.PersonalInfo</class>
+      <class>com.epam.example.jpatask1.domain.Unit</class>
+      <properties>
+         <property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver"/>
+         <property name="javax.persistence.jdbc.user" value="sa"/>
+         <property name="javax.persistence.jdbc.password" value=""/>
+         <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/org"/>
+      </properties>
+   </persistence-unit>
+</persistence>
